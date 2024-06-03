@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YadiYadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+<div id="game-container">
+    <h1>YadiYadi</h1>
+    <div id="score-container">
+        Score: <span id="score">0</span>
+    </div>
+    <div id="question-container">
+        <div id="question">Question text will go here</div>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+    </div>
+    <div id="controls" class="controls">
+        <button id="next-btn" class="next-btn btn">Next</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
