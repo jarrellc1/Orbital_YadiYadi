@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: url('/images/mainbackgrnd.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.play-btn {
+    margin: 0 auto;
+}
+
+.store-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
